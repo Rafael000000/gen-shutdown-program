@@ -118,6 +118,7 @@ main = do
   on btn7 #clicked $ do
     putStrLn "User chose: Lock"
     --callCommand "slock"
+    Gtk.widgetDestroy window
     callCommand "i3lock-fancy -p"
 
 -- Grid
@@ -128,8 +129,8 @@ main = do
   Gtk.gridSetColumnHomogeneous grid True
 
   -- Attach
-  #attach grid btn1   0 0 1 1
-  #attach grid label1 1 0 1 1
+  #attach grid btn7   0 0 1 1
+  #attach grid label7 1 0 1 1
   #attach grid btn2   0 1 1 1
   #attach grid label2 1 1 1 1
   #attach grid btn3   0 2 1 1
@@ -140,8 +141,8 @@ main = do
   #attach grid label5 3 1 1 1
   #attach grid btn6   2 2 1 1
   #attach grid label6 3 2 1 1
-  #attach grid btn7   4 0 1 1
-  #attach grid label7 5 0 1 1
+  #attach grid btn1   4 0 1 1
+  #attach grid label1 5 0 1 1
 
   #add window grid
 
