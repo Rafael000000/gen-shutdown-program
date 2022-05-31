@@ -1,0 +1,54 @@
+name:                gen-shutdown-program
+version:             0.1.0.0
+github:              "Rafael000000/gen-shutdown-program"
+license:             BSD3
+author:              "Rafael"
+maintainer:          "git-rafael@proton.me"
+copyright:           "GPL3v3"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/Rafael000000/gen-shutdown-program#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- gi-gtk == 3.0.*
+- gi-gtk-hs
+- haskell-gi-base
+- directory
+- unix
+- process
+
+library:
+  source-dirs: src
+
+executables:
+  gen-shutdown-program-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - gen-shutdown-program
+
+tests:
+  gen-shutdown-program-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - gen-shutdown-program
