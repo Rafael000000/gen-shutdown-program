@@ -1,1 +1,2 @@
-".stack-work/"
+# ignore all . folders but include . files
+.*/
