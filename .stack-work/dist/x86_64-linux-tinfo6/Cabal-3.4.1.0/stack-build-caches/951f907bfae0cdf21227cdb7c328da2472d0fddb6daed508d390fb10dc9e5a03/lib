@@ -1,7 +1,7 @@
 /home/rafael/.stack/programs/x86_64-linux/ghc-tinfo6-9.0.2/lib/ghc-9.0.2/include/ghcversion.h:
   hash: b6281754d6dc5c5462a97f01fbffb615a7d9f031384e8e8250fce23e8f43f266
 /home/rafael/Git/gen-shutdown-program/README.md:
-  hash: bb260f77dd01e3dd280fa5a8fc7699ffb5cd3b2d6b6fd6b7c552e5529b74a234
+  hash: ebe9fa9d5092547f24192e7be4b5f3cf2b07f876679a1425f373a11cb8f6cf5d
 ? /home/rafael/Git/gen-shutdown-program/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.4.1.0/build/autogen/Paths_gen_shutdown_program.hs
 : hash: d5eba96ba5e82e77c9b12b50fc591d90067686f1c025e68a724ab886443618d7
 /home/rafael/Git/gen-shutdown-program/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.4.1.0/build/autogen/cabal_macros.h:
